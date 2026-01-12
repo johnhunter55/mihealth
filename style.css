@@ -1,22 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: google sans, sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
 }
 
 header{
-    height: 100px;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
 }
 
 nav{
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    width: 50%;
 }
 
-body{
-    background-color: grey;
+a img{
+    width: 200px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main{
+    background-image: url('/more-leaves.png');
+    background-color: lightgrey;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.foodphoto1{
+    margin: 10px;
+    background-image: url('/image1.jpg');
+}
+
+.foodphoto2{
+    margin: 10px;
+    background-image: url('/image2.jpg');
+}
+
+.foodphoto3{
+    margin: 10px;
+    background-image: url('/image3.jpg');
+}
+
+.photo{
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 500px;
+}
+
+.foodphoto{
+    position: relative;
+}
+
+.foodphoto h2{
+    position: absolute;  /* Takes it out of the normal flow */
+    top: 50%;            /* Moves top edge to the middle */
+    left: 50%;           /* Moves left edge to the middle */
+    transform: translate(-50%, -50%); /* Perfect centering trick */
+    color: black;
+    background-color: white;        /* Makes it visible on dark photos */
+    z-index: 10;         /* Ensures it sits ON TOP of the image */
+    padding: 20px;
+}
+
+.textbox h1 {
+    font-size: 3rem;     /* Makes the title big and bold */
+    margin-bottom: 15px; /* Pushes the paragraph down */
+    color: #222;         /* Dark grey is softer than pure black */
+}
+
+.textbox p {
+    font-size: 1.1rem;
+    line-height: 1.6;    /* Makes text easier to read */
+    color: #555;         /* Lighter grey for description */
+    margin-bottom: 25px; /* Space before the button */
+}
+
+.textbox h4 {
+    color: darkgreen;    /* distinct accent color */
+    letter-spacing: 2px; /* Spaced out letters look fancy */
+    text-transform: uppercase; /* FORCES CAPS */
+    cursor: pointer;     /* Shows the little hand icon */
+    font-weight: 700;
+}
+
+.textbox{
+    width: 40%;          /* Takes up less than half the screen */
+    padding: 20px;       /* Breathing room inside the box */
+    text-align: left;
+    background-color: lightgrey;
+    height: 80%;
 }
