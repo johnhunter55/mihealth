@@ -4,11 +4,13 @@
     margin: 0;
     padding: 0;
     font-family: google sans, sans-serif;
+    box-sizing: border-box;
 }
 
 .container{
     width: 90%;
     margin: 0 auto;
+    height: 100vh
 }
 
 header{
@@ -48,6 +50,8 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+    height: 80vh;
 }
 
 .collection{
@@ -55,27 +59,25 @@ main{
     justify-content: space-between;
     align-items: center;
     width: 70%;
+    gap: 20px;
 }
 
 .foodphoto1{
-    margin: 10px;
     background-image: url('/image1.jpg');
 }
 
 .foodphoto2{
-    margin: 10px;
     background-image: url('/image2.jpg');
 }
 
 .foodphoto3{
-    margin: 10px;
     background-image: url('/image3.jpg');
 }
 
 .photo{
     background-size: cover;
     background-position: center;
-    width: 300px;
+    width: 350px;
     height: 500px;
 }
 
@@ -111,14 +113,15 @@ main{
     color: darkgreen;    /* distinct accent color */
     letter-spacing: 2px; /* Spaced out letters look fancy */
     text-transform: uppercase; /* FORCES CAPS */
-    cursor: pointer;     /* Shows the little hand icon */
     font-weight: 700;
 }
 
 .textbox{
-    width: 40%;          /* Takes up less than half the screen */
-    padding: 20px;       /* Breathing room inside the box */
-    text-align: left;
+    width: 40%;
     background-color: lightgrey;
-    height: 80%;
+    height: 500px;
+    padding: 20px;
+    display: flex;             /* Turn on Flexbox */
+    flex-direction: column;    /* Stack items vertically (instead of side-by-side) */
+    justify-content: center;
 }
